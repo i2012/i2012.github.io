@@ -1,3 +1,8 @@
+/* 
+    jsDelivr CDN 倒了, 一直发愁静态资源该何去何从, 始终没有找到可白嫖且更好用的替代品
+    今天找到了, 就是决定是你啦, 上吧~ wellcee 的 OSS储存！！
+*/
+
 :root {
     --primary-color: #367BF0;
     --body-color: #f9f9f9;
@@ -17,7 +22,8 @@ body.dark-theme {
 }
 
 header {
-    background-image: url(../img/home-banner.jpg);
+    background-image: url(https://qnimg1.wellcee.com/data/2023/02/03/16753567257420549);
+    /* background-image: url(../img/home-banner.jpg); */
     box-shadow: 0 0 20px rgba(0, 0, 0, .5), inset 0 -8px rgba(0, 0, 0, .3);
     min-height: 100vh
 }
@@ -34,7 +40,8 @@ header.bg-cover::before {
 }
 
 #banner-logo {
-    background: url(../img/acrepi.png) no-repeat;
+    /* background: url(../img/acrepi.png) no-repeat; */
+    background: url(https://qnimg1.wellcee.com/data/2023/02/03/16753555497103677) no-repeat;
     transform: rotate(-90deg);
     background-position: 100% 30px;
     background-size: auto 410px;
