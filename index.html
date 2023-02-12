@@ -22,18 +22,34 @@
             $$ = document.querySelectorAll.bind(document)
     </script>
     <script>
-        // 移动端视频演示锚点隐藏列表
+
         window.addEventListener('DOMContentLoaded', function () {
             var navContainer = document.querySelector('.bg-cover').children[0];
             var as = navContainer.querySelector('a[href="#acoiasn"]');
             as.addEventListener('click', function () {
                 navContainer.setAttribute('class', 'container')
             });
+            /*
+                if (localStorage.getItem('tixing') !== 'ok') {
+                    var infoThis = document.querySelector('.infoThis');
+                    infoThis.style.display = 'block';
+                }
+            */
         });
+        /*
+            function consoleHidden() {
+                var infoThis = document.querySelector('.infoThis');
+                localStorage.setItem('tixing', 'ok');
+                infoThis.style.display = 'none';
+            }
+        */
     </script>
 </head>
 
 <body>
+    <div style="display:none;height: 30px;text-align: center;line-height:30px;font-size:16px;background-color: #24292f;color: #fff;" class="infoThis">
+        侵权投诉邮箱: acrepichina@outlook.com&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:;" onclick="consoleHidden()" style="color: #fff;text-decoration: underline;">不再提醒</a>
+    </div>
     <header class="bg-cover">
         <nav class="container">
             <a id="logo" href="index.html" style="background-image:url(https://qnimg1.wellcee.com/data/2023/02/03/16753549795096448); padding-top: 100px;"></a>
@@ -41,7 +57,7 @@
             <ul id="navigation">
                 <li><a href="https://qnimg1.wellcee.com/Coordinate-3b0b310f%20v16.zip" target="_blank">获取坐标配置文件 V16</a></li>
                 <!-- <li><a href="https://qnimg1.wellcee.com/kill%20Banner-3b0b310g.zip" target="_blank">下载banner移除工具</a></li> -->
-                <li><a href="#acoiasn">Acrepi食用演示</a></li>
+                <li><a href="#acoiasn">Acrepi视频教程</a></li>
                 <li class="dropdown-menu"><span class="saku-i">捐赠 <i class="iconfont icon-xiahuasanjiao"></i></span>
                     <div><a href="https://afdian.net/a/sakura3" target="_blank">给UP主买一杯奶茶</a>
                         <!-- <style>
@@ -66,7 +82,7 @@
                     </div>
                 </li>
                 <li class="dropdown-menu"><span>培训班 <i class="iconfont icon-xiahuasanjiao"></i></span>
-                    <div><a href="https://wwuy.lanzoub.com/i7ASW0lqy18b" target="_blank">视频演示</a>
+                    <div>
                         <a href="javascript:;">你干嘛~~哈哈哈哎哟~</a>
                         <a href="https://unity.com/cn/learn" target="_blank">Unity引擎从入门到放弃</a>
                         <a href="javascript:;">Kali Linux面向监狱编程</a>
@@ -291,11 +307,12 @@
             </div>
             <div>
                 <h4>政策</h4><a href="javascript:;">Cookie Policy</a>
+                <a href="mailto:acrepichina@outlook.com?&body=%0A%0A%0A">侵权投诉邮箱</a>
             </div>
             <div>
                 <img src="https://qnimg1.wellcee.com/data/2023/02/03/16753549795096448" alt="Acrepi" style="max-width: 60%;"><br><br>
                 <!-- <img src="img/acrepi-logo.png" alt="Acrepi" style="max-width: 60%;"><br><br> -->
-                © Genshin Impact Acrepi</div>
+                © Genshin Impact Acrepi<br></div>
         </div>
     </footer>
     <script src="js/script.min.js"></script>
