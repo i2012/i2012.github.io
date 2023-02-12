@@ -21,6 +21,16 @@
         const $ = document.querySelector.bind(document),
             $$ = document.querySelectorAll.bind(document)
     </script>
+    <script>
+        // 移动端视频演示锚点隐藏列表
+        window.addEventListener('DOMContentLoaded', function () {
+            var navContainer = document.querySelector('.bg-cover').children[0];
+            var as = navContainer.querySelector('a[href="#acoiasn"]');
+            as.addEventListener('click', function () {
+                navContainer.setAttribute('class', 'container')
+            });
+        });
+    </script>
 </head>
 
 <body>
