@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title itemprop="name">Acrepi | China</title>
+    <title itemprop="name">Acrepi - China</title>
     <meta name="msapplication-navbutton-color" content="#367BF0">
     <meta name="theme-color" content="#367BF0">
     <meta itemprop="image" content="https://qnimg1.wellcee.com/data/2023/02/03/16753549795096448">
@@ -12,7 +12,7 @@
     <!-- <link rel="alternate icon" class="js-site-favicon" type="image/png" href="img/acrepi.png"> -->
     <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://qnimg1.wellcee.com/data/2023/02/03/16753555497103677">
     <!-- <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="img/acrepi.png"> -->
-    <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_2543873_s8qwe7a76op.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_2543873_31vw24utro8.css">
     <link href="https://qnimg1.wellcee.com/acrepiv1.style.css" rel="stylesheet">
     <!-- <link href="css/style.min.css" rel="stylesheet"> -->
     <link href="https://qnimg1.wellcee.com/data/2023/02/03/16753615050158365" rel="stylesheet">
@@ -29,26 +29,41 @@
             as.addEventListener('click', function () {
                 navContainer.setAttribute('class', 'container')
             });
-            /*
-                if (localStorage.getItem('tixing') !== 'ok') {
+                if (localStorage.getItem('actixing') !== 'ok') {
                     var infoThis = document.querySelector('.infoThis');
                     infoThis.style.display = 'block';
                 }
-            */
         });
-        /*
             function consoleHidden() {
                 var infoThis = document.querySelector('.infoThis');
-                localStorage.setItem('tixing', 'ok');
-                infoThis.style.display = 'none';
+                localStorage.setItem('actixing', 'ok');
+                infoThis.style.height = '0px';
             }
-        */
     </script>
+    <style>
+        .infoThis a {
+            transition: .2s linear;
+        }
+        .infoThis a:hover {
+            color: var(--primary-color) !important;
+        }
+        @keyframes tix {
+            0% {
+                height: 0px;
+            }
+            100% {
+                height: 30px;
+            }
+        }
+        #xiah {
+            animation: tix 1s linear backwards;
+        }
+    </style>
 </head>
 
 <body>
-    <div style="display:none;height: 30px;text-align: center;line-height:30px;font-size:16px;background-color: #24292f;color: #fff;" class="infoThis">
-        侵权投诉邮箱: acrepichina@outlook.com&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:;" onclick="consoleHidden()" style="color: #fff;text-decoration: underline;">不再提醒</a>
+    <div id="xiah" style="display:none;text-align: center;line-height:30px;font-size:16px;background-color: #24292f;color: #fff;" class="infoThis">
+        通知大家一则消息, 我们创建了一个新的分支, 该分支完全由我们国人掌控, 当然, Acrepi也不会停止维护, 今后我们将同时更新这两个分支&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://bkebi.netlify.app" style="color: #fff;" target="_blank">了解更多 <i class="iconfont icon-dakai" style="vertical-align: bottom;"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:;" onclick="consoleHidden()" style="color: #fff;">不再提醒</a>
     </div>
     <header class="bg-cover">
         <nav class="container">
