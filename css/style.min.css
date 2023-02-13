@@ -497,7 +497,7 @@ header nav.show-menu #logo {
     height: 43px;
     border: 1px solid transparent;
     color: var(--text-color-dark);
-    text-transform: uppercase;
+    /* text-transform: uppercase; 所有小写字母转大写 */
     cursor: pointer
 }
 
